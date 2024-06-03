@@ -1,0 +1,202 @@
+/*Nycole Maria Costa Rodrigues
+30/04/2024
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Estilos globais*/
+* {
+    margin: 10;
+    padding: 10;
+    box-sizing: content-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Corpo da página*/
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F37820;
+    margin: 0;
+}
+
+/*Container principal*/
+.container {
+    width: 80%;
+    height: 95vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+    border-radius: 2%;
+}
+
+/*Imagem*/
+.form-image {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F37820;
+    padding: 10rem;
+}
+
+.form-image img {
+    width: 25rem;
+}
+
+/*Formulário*/
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 2%;
+}
+
+/*Cabeçalho*/
+.form-header {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header h1::after {
+    content: '';
+    display: block;
+    width: 4rem;
+    height: 0.3rem;
+    background-color: #F37820;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+/*Inputs*/
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 0;
+}
+
+.input-box input {
+    margin: 0.4rem 0;
+    padding: 0.1rem 6rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.input-box input::placeholder {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+}
+
+/*Container dos anexos*/
+.anexos-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+/*Anexos*/
+.anexos {
+    margin: 0 2rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #F37820;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    background-color: transparent;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.anexos:hover {
+    background-color: #eeeeee75;
+    border-color: #6c63ff;
+}
+
+.anexos:focus-visible {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+.file-label {
+    margin: 0.1rem 0;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid #F37820;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    background-color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label:hover {
+    background-color: #eeeeee75;
+    border-color: #6c63ff;
+}
+
+.file-label:focus {
+    outline: none;
+    border-color: #6c63ff;
+}
+
+/*Mensagem*/
+.mensagem {
+    color: #FF1E1E;
+    font-size: small;
+    text-align: center;
+}
+
+/*Botões*/
+.botoes {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.botoes-group button {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.botoes-group button:hover {
+    background-color: #F37820;
+    color: #fff;
+}
+
+.botoes-group button[type="submit"] {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.botoes-group button[type="reset"] {
+    background-color: #FF1E1E;
+    color: #fff;
+}
